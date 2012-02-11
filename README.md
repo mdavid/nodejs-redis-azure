@@ -4,7 +4,7 @@ Redis on Windows prototype
 
 - The project is now a fork of https://github.com/antirez/redis
 - libuv dependency was removed in favor of calling Win32 APIs directly. This was done in order to make integrations with upstream repo more manageable.
-- Improvement to the snapshotting (save on disk) algorithm. The code now serializes to buffer on a background thread then writes to disk. The main thread is blocked only on writes while the background thread is writing to buffer. This is an improvement to a full block where the snapshot was written to disk on the main thread.
+- Improvement to the snapshotting (save on disk) algorithm. The code now serializes to buffer on a background thread then writes to disk. The main thread is blocked only on writes while the background thread is writing to buffer. This is an improvement to a full block where the snapshot was written to disk on the main thread.  This prototype is available in `background_snapshot` branch.
 - Improved unit tests pass rate
 
 ===
