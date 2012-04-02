@@ -1,0 +1,28 @@
+info it worked if it ends with ok
+verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+verbose cli   'install' ]
+info using npm@1.1.0-3
+info using node@v0.6.10
+verbose config file C:\Users\M. David Peterson\.npmrc
+verbose config file C:\Program Files\nodejs\etc\npmrc
+verbose config file C:\Program Files\nodejs\node_modules\npm\npmrc
+verbose mkdir done: C:\Users\M. David Peterson\AppData\Roaming\npm 755
+verbose mkdir done: C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist 755
+ERR! Couldn't read dependencies.
+ERR! Error: ENOENT, no such file or directory 'C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist\package.json'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Windows_NT 6.1.7601
+ERR! command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+ERR! cwd C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist
+ERR! node -v v0.6.10
+ERR! npm -v 1.1.0-3
+ERR! path C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist\package.json
+ERR! code ENOENT
+ERR! message ENOENT, no such file or directory 'C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist\package.json'
+ERR! errno {}
+verbose exit [ 1, true ]

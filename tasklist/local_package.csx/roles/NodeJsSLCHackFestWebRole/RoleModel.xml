@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NodeJsSLCHackFestWebRole" version="1.6.21103.1459" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Startup>
+    <Task commandLine="setup_web.cmd" executionContext="elevated" relativePath="approot\bin">
+      <Environment>
+        <Variable name="EMULATED">
+          <RoleInstanceValue xpath="/RoleEnvironment/Deployment/@emulated" />
+        </Variable>
+      </Environment>
+    </Task>
+  </Startup>
+  <Runtime />
+  <Sites>
+    <Site name="Web" physicalDirectory="C:\Users\M. David Peterson\Projects\nodeslc-hackfest\tasklist\NodeJsSLCHackFestWebRole">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="Endpoint1" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>
